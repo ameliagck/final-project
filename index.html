@@ -7,39 +7,44 @@
   <title>Home</title>
   <link rel="icon" type="image/x-icon" href="images/favicon_io/favicon.ico">
 </head>
-<body>
-    <header>
-        <a href="#">
-            <img src="images/acsis-logo.jpg" class="container-sm img-fluid" alt="acsis logo"></a>
-        <ul class="nav flex-column">
-            <li class="nav-item dropdown">
-                <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Your Account</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="locker-portal.html">Locker Portal</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Your Academic Journey</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="your-courses.html">Your Courses</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Finances and Payments</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="your-courses.html">Your Courses</a></li>
-                </ul>
-            </li>
-        </ul> 
+<body class="container-fluid">
+    <header class="float-start" style="width: 23em">
+        <div class="row">
+            <a href="#">
+                <img src="images/acsis-logo.jpg" class="float-start img-fluid" style="width: 250px; padding: 2em;" alt="acsis logo">
+            </a>
+            <ul class="nav flex-column" style="padding-left: 2em;">
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Your Account</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="locker-portal.html">Locker Portal</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Your Academic Journey</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="your-courses.html">Your Courses</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Finances and Payments</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="your-courses.html">Your Courses</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
     </header>
-    <main>
+    <main class="container" style="padding-top: 6em; padding-left: 18em;">
         <section>
-            <div class="container px-25">
+            <div>
                 <h1>Welcome,</h1>
-                <h2>Jane Doe</h2>
+                <h2 style="padding-left: 5em;">Jane Doe</h2>
             </div>
-            <div class="card card-body" style="width: 20rem;">
-                <p class="card-text">The Algonquin College Student Information System (ACSIS) is a 100% web-based, secure, convenient, and up-to-date collection of your academic data. It simplifies your timetable, grade, and financial management, optimizing your time and helping you plan.</p>
+            <div style="padding-left: 20em;">
+                <div class="card card-body" style="width: 25rem; padding: 2em;">
+                    <p class="card-text">The Algonquin College Student Information System (ACSIS) is a 100% web-based, secure, convenient, and up-to-date collection of your academic data. It simplifies your timetable, grade, and financial management, optimizing your time and helping you plan.</p>
+                </div>
             </div>
         </section>
 
@@ -123,27 +128,38 @@
                 </div>
             </div>
         </section>
-
-        <section class="card" style="width: 25rem;">
-            <div class="card-body">
-                <h2 class="card-title">New</h2>
-                <ul class="card-text">
-                    <li>Spring 2023 Graduates. Your credentials will be mailed out to your address on file between the 1st and 2nd week of October.</li>
-                    <li>Domestic and International students can now download from their ACSIS account a LETTER OF SUPPORT to submit
-                        with their STUDENT COPY TRANSCRIPT.</li>
-                </ul>
+        <div class="row py-5">
+            <div class="col-6" style="width: 50%">
+                <section class="card" style="width: 25rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">New</h2>
+                        <ul class="card-text">
+                            <li>Spring 2023 Graduates. Your credentials will be mailed out to your address on file between the 1st and 2nd week of October.</li>
+                            <li>Domestic and International students can now download from their ACSIS account a LETTER OF SUPPORT to submit
+                                with their STUDENT COPY TRANSCRIPT.</li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-        </section>
-
-        <section class="card" style="width: 25rem;">
-            <div class="card-body">
-                <h2 class="card-title">Attention</h2>
-                <p class="card-text">AC IN TORONTO STUDENTS ENROLLED AT CDI COLLEGE – MISSISSAUGA & NORTH YORK</p>
-                <p class="card-text">To get all the info needed, please click on the following <a href="#" class="card-link">link</a></p>
+            <div class="col-6" style="width: 50%;" >
+                <section class="card" style="width: 25rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">Attention</h2>
+                        <p class="card-text">AC IN TORONTO STUDENTS ENROLLED AT CDI COLLEGE – MISSISSAUGA & NORTH YORK</p>
+                        <p class="card-text">To get all the info needed, please click on the following <a href="#" class="card-link">link</a></p>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="container-fluid bg-dark text-white row">
+        <div class="col-2">
+            <img src="images/ac-logo.jpg" class="img-fluid" style="width: 150px; padding: 2em;" alt="ac logo">
+        </div>
+        <div class="col-10 py-3 text-center align-middle">
+            <p>&copy; 2023 UXUI 1 2023</p>
+          </div>
+    </footer>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
