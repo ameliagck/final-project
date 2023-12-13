@@ -2,14 +2,17 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
-$primary:       #A04ADD;
-$secondary:     #3B53C7;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Rethink+Sans:wght@400;700&family=Source+Sans+3&display=swap');
+
+$primary:       #43b02a;
+$secondary:     #a6c8bc;
 $success:       #A4D882;
 $info:          #59C1EF;
 $warning:       #FFF689;
 $danger:        #E5446D;
 $light:         #f2f2f2;
 $dark:          #006341;
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
