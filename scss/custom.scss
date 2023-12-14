@@ -10,8 +10,15 @@ $success:       #A4D882;
 $info:          #59C1EF;
 $warning:       #FFF689;
 $danger:        #E5446D;
-$light:         #f2f2f2;
+$light:         #cecece;
 $dark:          #006341;
+
+
+$card-title-color:                  $primary;
+$card-subtitle-color:               $dark;
+$card-border-radius:                2em;
+$card-border-width:                 0;
+
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
